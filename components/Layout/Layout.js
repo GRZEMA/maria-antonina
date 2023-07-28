@@ -1,5 +1,8 @@
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
 import Navigation from '../Navigation/Navigation'
-import { useState } from 'react'
 import Burger from '../icons/Burger'
 
 import classes from './Layout.module.css'
@@ -12,11 +15,16 @@ const Layout = ({ children }) => {
 	}
 
 	return (
-		<main>
-			{showNavigation && <Navigation onClick={toggleNavigation} />}
-			<button className={classes['burger-btn']} onClick={toggleNavigation}>
-				<Burger />
-			</button>
+		<main className={classes.main}>
+			{showNavigation && <Navigation toggleNav={toggleNavigation} />}
+			<div className={classes.navbar}>
+				<Link href='/'>
+					<Image src='/images/logo.png' alt='logo' height={100} width={120} />
+				</Link>
+				<button className={classes['burger-btn']} onClick={toggleNavigation}>
+					<Burger />
+				</button>
+			</div>
 			{children}
 		</main>
 	)

@@ -1,0 +1,24 @@
+.nav{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.tytul{
+    color: white;
+    font-size:6vh;
+    font-weight: bold;
+    text-align: center;
+}
+.description_wstep{
+    padding: 3rem;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    font-weight: bold;
+}
+.description{
+    padding: 3rem;
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
