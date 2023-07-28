@@ -21,7 +21,7 @@ const Navigation = ({ toggleNav }) => {
 			</button>
 			<ul onClick={handleLinkClick}>
 				<li>
-					<Link href='/oferta/Oferta'>Oferta</Link>
+					<Link href='/oferta'>Oferta</Link>
 				</li>
 				<li>
 					<Link href='/restauracja'>Restauracja</Link>
