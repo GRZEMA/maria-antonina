@@ -5,7 +5,6 @@ import { Nunito } from 'next/font/google'
 import CloseBurger from '../icons/CloseBurger'
 
 import classes from './Navigation.module.css'
-
 const nunito = Nunito({ subsets: ['latin-ext'] })
 
 const Navigation = ({ onClick }) => {
