@@ -7,13 +7,19 @@ import CloseBurger from '../icons/CloseBurger'
 import classes from './Navigation.module.css'
 const nunito = Nunito({ subsets: ['latin-ext'] })
 
-const Navigation = ({ onClick }) => {
+const Navigation = ({ toggleNav }) => {
+	const handleLinkClick = (e) => {
+		if (e.target.tagName === 'A') {
+			toggleNav()
+		}
+	}
+
 	return (
 		<nav className={classes.nav + ' ' + nunito.className}>
-			<button className={classes.burger} onClick={onClick}>
+			<button className={classes.burger} onClick={toggleNav}>
 				<CloseBurger />
 			</button>
-			<ul>
+			<ul onClick={handleLinkClick}>
 				<li>
 					<Link href='/oferta/Oferta'>Oferta</Link>
 				</li>

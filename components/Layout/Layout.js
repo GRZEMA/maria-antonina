@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
 
 	return (
 		<main className={classes.main}>
-			{showNavigation && <Navigation onClick={toggleNavigation} />}
+			{showNavigation && <Navigation toggleNav={toggleNavigation} />}
 			<div className={classes.navbar}>
 				<Link href='/'>
 					<Image src='/images/logo.png' alt='logo' height={100} width={120} />

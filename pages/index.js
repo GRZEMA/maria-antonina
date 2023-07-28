@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header/Header'
+import Heading from '@/components/Heading/Heading'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,7 @@ export default function Home() {
 			</Head>
 			<Header />
 			<section className={inter.className}>
-				<h1>dd</h1>
+				<Heading text='Hotel Maria Antonina' />
 			</section>
 		</>
 	)
