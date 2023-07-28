@@ -15,10 +15,12 @@ export default function Navbar() {
 	return (
 		<section className={dancing_script.className + ' ' + classes.section}>
 			<Heading text='Oferta' />
-			<p className={classes.description_intro}>{WstepOferty}</p>
-			<p className={classes.description + ' ' + nunito.className}>
-				{OfertaPoPolsku}
-			</p>
+			<div className={classes['text-box']}>
+				<p className={classes.description_intro}>{WstepOferty}</p>
+				<p className={classes.description + ' ' + nunito.className}>
+					{OfertaPoPolsku}
+				</p>
+			</div>
 		</section>
 	)
 }
