@@ -15,7 +15,7 @@ const Navigation = ({ onClick }) => {
 			</button>
 			<ul>
 				<li>
-					<Link href='/oferta'>Oferta</Link>
+					<Link href='/oferta/Oferta'>Oferta</Link>
 				</li>
 				<li>
 					<Link href='/restauracja'>Restauracja</Link>
