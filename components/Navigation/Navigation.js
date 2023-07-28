@@ -5,7 +5,6 @@ import { Nunito } from 'next/font/google'
 import CloseBurger from '../icons/CloseBurger'
 
 import classes from './Navigation.module.css'
-
 const nunito = Nunito({ subsets: ['latin-ext'] })
 
 const Navigation = ({ onClick }) => {
@@ -16,7 +15,7 @@ const Navigation = ({ onClick }) => {
 			</button>
 			<ul>
 				<li>
-					<Link href='/oferta'>Oferta</Link>
+					<Link href='/oferta/Oferta'>Oferta</Link>
 				</li>
 				<li>
 					<Link href='/restauracja'>Restauracja</Link>
