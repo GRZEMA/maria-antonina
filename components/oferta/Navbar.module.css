@@ -24,6 +24,7 @@
 	display: inline-block;
 	width: 30%;
 	height: 70%;
+	z-index: -10;
 }
 
 .text-box::after {
@@ -36,6 +37,7 @@
 	display: inline-block;
 	width: 30%;
 	height: 70%;
+	z-index: -10;
 }
 
 .description_intro {

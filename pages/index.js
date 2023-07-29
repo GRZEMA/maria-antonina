@@ -15,7 +15,7 @@ export default function Home() {
 			</Head>
 			<Header />
 			<section className={inter.className}>
-				<Heading text='Hotel Maria Antonina' />
+				<Heading text='Dwór Maria Antonina' />
 			</section>
 		</>
 	)
