@@ -18,19 +18,17 @@ const Layout = ({ children }) => {
 	return (
 		<>
 			{showNavigation && <Navigation toggleNav={toggleNavigation} />}
-			<main className={classes.main}>
-				<div className={classes.navbar}>
-					<Link href='/'>
-						<div className={classes.logo}>
-							<Image src='/images/logo.png' alt='logo' fill />
-						</div>
-					</Link>
-					<button className={classes['burger-btn']} onClick={toggleNavigation}>
-						<Burger />
-					</button>
-				</div>
-				{children}
-			</main>
+			<div className={classes.navbar}>
+				<Link href='/'>
+					<div className={classes.logo}>
+						<Image src='/images/logo.png' alt='logo' fill />
+					</div>
+				</Link>
+				<button className={classes['burger-btn']} onClick={toggleNavigation}>
+					<Burger />
+				</button>
+			</div>
+			<main className={classes.main}>{children}</main>
 			<Footer />
 		</>
 	)
