@@ -9,6 +9,35 @@
 	text-align: center;
 }
 
+.text-box {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.text-box::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top: 4px solid #c08040;
+	border-left: 4px solid #c08040;
+	display: inline-block;
+	width: 30%;
+	height: 70%;
+}
+
+.text-box::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-bottom: 4px solid #c08040;
+	border-right: 4px solid #c08040;
+	display: inline-block;
+	width: 30%;
+	height: 70%;
+}
+
 .description_intro {
 	padding: 3rem;
 	text-align: center;
@@ -16,9 +45,20 @@
 	color: black;
 	font-weight: bold;
 }
+
 .description {
 	padding: 3rem;
 	text-align: center;
 	font-size: x-large;
 	color: black;
+}
+
+@media (max-width: 576px) {
+	.description {
+		padding: 1rem;
+	}
+
+	.description_intro {
+		padding: 1rem;
+	}
 }
