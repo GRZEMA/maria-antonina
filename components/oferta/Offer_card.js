@@ -10,6 +10,7 @@ const dancing_script = Dancing_Script({ subsets: ['latin-ext'] })
 const Offer = () => {
 	// Dzięki użyciu useState, możemy zainicjować stan lokalny komponentu
 	const [offers, setOffers] = useState([]) // Tablica z ofertami
+	const [showModal, setShowModal] = useState(false);
 
 	// Przykładowe dane ofert (uproszczone dla celów demonstracyjnych)
 	const sampleOffers = [
@@ -76,7 +77,7 @@ const Offer = () => {
 						<ul>
 							{offer.description.map((item) => (
 								<li>
-									<Link href='/'>{item}</Link>
+									<Link href='/' onClick={() => setShowModal(true)}>{item}</Link>
 									<hr />
 								</li>
 							))}
