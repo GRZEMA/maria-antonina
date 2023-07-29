@@ -6,6 +6,7 @@ import Navigation from '../Navigation/Navigation'
 import Burger from '../icons/Burger'
 
 import classes from './Layout.module.css'
+import Footer from '../Footer/Footer'
 
 const Layout = ({ children }) => {
 	const [showNavigation, setShowNavigation] = useState(false)
@@ -15,20 +16,23 @@ const Layout = ({ children }) => {
 	}
 
 	return (
-		<main className={classes.main}>
+		<>
 			{showNavigation && <Navigation toggleNav={toggleNavigation} />}
-			<div className={classes.navbar}>
-				<Link href='/'>
-					<div className={classes.logo}>
-						<Image src='/images/logo.png' alt='logo' fill />
-					</div>
-				</Link>
-				<button className={classes['burger-btn']} onClick={toggleNavigation}>
-					<Burger />
-				</button>
-			</div>
-			{children}
-		</main>
+			<main className={classes.main}>
+				<div className={classes.navbar}>
+					<Link href='/'>
+						<div className={classes.logo}>
+							<Image src='/images/logo.png' alt='logo' fill />
+						</div>
+					</Link>
+					<button className={classes['burger-btn']} onClick={toggleNavigation}>
+						<Burger />
+					</button>
+				</div>
+				{children}
+			</main>
+			<Footer />
+		</>
 	)
 }
 
