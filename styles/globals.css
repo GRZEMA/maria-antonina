@@ -4,6 +4,23 @@
 	padding: 0;
 }
 
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(192, 128, 64);
+	border-radius: 10%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(152, 101, 50);
+}
+
 section {
 	margin: 0 auto;
 	max-width: 1200px;
