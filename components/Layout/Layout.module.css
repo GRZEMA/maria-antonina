@@ -29,7 +29,8 @@
 	top: 0;
 	left: 0;
 	height: 100px;
-	width: 100%;
+	width: 100vw;
+	max-width: 100%;
 	z-index: 150;
 	background-color: rgb(192, 128, 64, 0.9);
 	border-bottom: rgb(192, 128, 64) 2px solid;
