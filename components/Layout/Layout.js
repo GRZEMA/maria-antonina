@@ -19,7 +19,9 @@ const Layout = ({ children }) => {
 			{showNavigation && <Navigation toggleNav={toggleNavigation} />}
 			<div className={classes.navbar}>
 				<Link href='/'>
-					<Image src='/images/logo.png' alt='logo' height={100} width={120} />
+					<div className={classes.logo}>
+						<Image src='/images/logo.png' alt='logo' fill />
+					</div>
 				</Link>
 				<button className={classes['burger-btn']} onClick={toggleNavigation}>
 					<Burger />

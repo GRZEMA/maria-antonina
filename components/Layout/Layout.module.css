@@ -35,9 +35,13 @@
 	border-bottom: rgb(192, 128, 64) 2px solid;
 }
 
-.navbar .logo {
-	width: 120px;
-	height: 60px;
+.logo {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 120px;
+	max-height: 120px;
 }
 
 .logo img {
