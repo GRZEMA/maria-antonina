@@ -77,7 +77,6 @@ const Offer = () => {
 							{offer.description.map((item) => (
 								<li>
 									<Link href='/'>{item}</Link>
-									<hr />
 								</li>
 							))}
 						</ul>
